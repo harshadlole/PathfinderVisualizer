@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="indexfunctions.js"></script>
+    <script type="text/javascript" src="boardfunctions.js"></script>
+    <script type="text/javascript" src="nodefunctions.js"></script>
+    <script type="text/javascript" src="astarfunctions.js"></script>
+    <script type="text/javascript" src="depthfirstfunctions.js"></script>
+    <script type="text/javascript" src="breadthfirstfunctions.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <title>Pathfinding Visualizer Project</title>
+</head>
+<body>
+    <div id="top_menu" class="menu">
+        <h1>Pathfinding Visualizer Project</h1>
+        <ul>
+            <select name="pathfinding_function" id="pathfinding_function">
+                <option value="aStar">A-Star</option>
+                <option value="depthFirst">Depth-First</option>
+                <option value="breadthFirst">Breadth-First</option>
+            </select>
+            <li><button id="run_button">RUN</button></li>
+        </ul>
+    </div>
+	<div id="table_container" ondragstart="return false;" ondrop="return false;">	<!-- Fixes bug caused when dragging objects -->
+	</div>
+</body>
+</html>
